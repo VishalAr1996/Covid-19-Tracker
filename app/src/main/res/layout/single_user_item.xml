@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="6dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content">
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:padding="3dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/profilePhoto"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:src="@drawable/blank"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/singleUserName"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginStart="12dp"
+             android:layout_marginLeft="12dp"
+             android:layout_marginTop="8dp"
+             android:textSize="16sp"
+             android:textColor="@color/purple_200"
+             android:fontFamily="@font/poppins_semibold"
+             android:text="User name"
+             app:layout_constraintStart_toEndOf="@+id/profilePhoto"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/location"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="12dp"
+             android:layout_marginLeft="12dp"
+             android:layout_marginTop="8dp"
+             android:fontFamily="@font/poppins_regular"
+             android:text="location"
+             android:textSize="12sp"
+             app:layout_constraintStart_toEndOf="@+id/profilePhoto"
+             app:layout_constraintTop_toBottomOf="@+id/singleUserName" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

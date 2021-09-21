@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+      <item android:title="Home"
+          android:id="@+id/nav_home"
+          android:icon="@drawable/ic_home"/>
+      <item android:title="Profile"
+          android:id="@+id/nav_profile"
+          android:icon="@drawable/ic_profile"/>
+      <item android:title="Find Help"
+          android:id="@+id/nav_find_help"
+          android:icon="@drawable/ic_findhelp"/>
+      <item android:title="Existing Helpers"
+          android:id="@+id/nav_friends"
+          android:icon="@drawable/ic_friends"/>
+      <item android:title="My Chats"
+          android:id="@+id/nav_chats"
+          android:icon="@drawable/ic_chat"/>
+      <item android:title="Check symptoms"
+          android:id="@+id/nav_sym"
+          android:icon="@drawable/ic_symptoms"/>
+      <item android:title="Vaccination info"
+          android:id="@+id/nav_vac"
+          android:icon="@drawable/ic_vaccine"/>
+
+  </group>
+    <group android:checkableBehavior="single" android:id="@+id/second">
+        <item android:title="Covid Helpline"
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_call"/>
+        <item android:title="Logout"
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+
+</menu>
